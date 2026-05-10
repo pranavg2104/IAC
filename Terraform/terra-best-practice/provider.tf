@@ -1,0 +1,10 @@
+#Explicit mention of the Terraform version -> best practice
+
+terraform{
+    required_providers{
+        aws = {
+            source = "hashicorp/aws"
+            version = "~> 6.0"
+        }
+    }
+}
