@@ -1,56 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pravesh Sudha – Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #141E30, #243B55);
-      color: #f2f2f2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 3px solid #00ADB5;
-      margin-bottom: 20px;
-    }
-    h1 { margin: 10px 0; font-size: 2em; }
-    h2 { color: #00ADB5; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 5px 0; }
-    a { color: #00ADB5; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Govekar - DevOps Technical Lead</title>
+    <style>
+        /* Modern, professional design with tech-focused colors inspired by DevOps themes */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117; /* Dark mode background for a tech feel */
+            color: #e6edf3; /* Light text for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Card Container Styling */
+        .container {
+            background-color: #161b22; /* Slightly lighter inner card background */
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 255, 200, 0.15); /* Neon glow effect for shadow */
+            max-width: 700px;
+            text-align: center;
+            border: 1px solid #30363d; /* Subtle border */
+        }
+
+        /* Title Styling */
+        .title {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 800;
+            /* Gradient for an innovative look (Blue to Green for DevOps theme) */
+            background: linear-gradient(45deg, #007bff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            letter-spacing: 1.5px;
+        }
+
+        /* Subtitle/Slogan Styling */
+        .slogan {
+            font-size: 1.3em;
+            color: #58a6ff; /* Bright blue secondary color */
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        /* Description Styling */
+        .description {
+            font-size: 1.1em;
+            color: #b3ccff; /* Muted blue for main text */
+            line-height: 1.7;
+            text-align: left;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            margin-top: 20px;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            text-align: left;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #0d1117;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+        }
+
+        .achievements h2 {
+            color: #00ff88;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .achievement-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .achievement-item::before {
+            content: "🚀";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Links Section */
+        .links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .link {
+            color: #58a6ff;
+            text-decoration: none;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            color: #00ff88; /* Neon green highlight for key terms */
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-  <img src="https://avatars.githubusercontent.com/u/88569706?v=4" alt="Pravesh Sudha">
-  <h1>Pravesh Sudha</h1>
-  <h2>DevOps Engineer | AWS Community Builder</h2>
-  <p>Skilled in Terraform, Ansible, AWS, Docker, Kubernetes, and CI/CD.</p>
 
-  <h3>Certifications & Achievements</h3>
-  <ul>
-    <li>AWS Certified Solutions Architect – Associate</li>
-    <li>Published DevOps Blogs (20K+ Views on Hashnode & Medium)</li>
-    <li>Open Source Contributor to Kestra, Portia AI & Cognee AI</li>
-    <li>Freelance DevOps Engineer on Fiverr</li>
-  </ul>
+    <div class="container">
 
-  <h3>Connect with Me</h3>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/pravesh-sudha/">LinkedIn</a></li>
-    <li><a href="https://x.com/praveshstwt">Twitter (X)</a></li>
-    <li><a href="https://www.youtube.com/@pravesh-sudha">YouTube</a></li>
-    <li><a href="https://blog.praveshsudha.com">Blog</a></li>
-  </ul>
+        <h1 class="title">
+            👨‍💻 Pranav Govekar
+        </h1>
+
+        <p class="slogan">
+            DevOps Technical Lead | AWS Certified Developer | Open Source Enthusiast
+        </p>
+
+        <p class="description">
+            Hello! I'm <strong>Pranav Govekar</strong>, a passionate <span class="highlight">DevOps Engineer</span> with over 4.5 years of experience in automation, cloud computing and CICD. Originally from a electrical background, I transitioned into tech as a self-taught developer, blending critical thinking with hands-on expertise to solve complex challenges. As a <span class="highlight">Certified AWS Developer</span>, I specialize in designing scalable AWS architectures using tools like TeamCity, Docker, Kubernetes, and CI/CD pipelines.
+        </p>
+
+        <div class="description">
+            DevOps Technical Lead at KPIT, trying to learn Terraform and cloud
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/pranavg2104" class="link" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/pranav-g-921a28110/" class="link" target="_blank">LinkedIn</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
