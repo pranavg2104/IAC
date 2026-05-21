@@ -12,5 +12,5 @@ variable "instance_type" {
 }
 
 variable "project_name" {
-  default = "2-tier-application"
+  default = "two-tier-application"
 }

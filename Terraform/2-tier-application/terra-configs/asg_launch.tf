@@ -31,7 +31,7 @@ module "asg" {
 
   traffic_source_attachments = {
     alb = {
-      traffic_source_identifier = module.alb.arn
+      traffic_source_identifier = module.alb.target_groups[0]
     }
   }
 
