@@ -17,6 +17,6 @@ locals {
     DB_USER = jsondecode(data.aws_secretsmanager_secret_version.rds_credentials.secret_string)["username"]
     DB_PASSWORD = jsondecode(data.aws_secretsmanager_secret_version.rds_credentials.secret_string)["password"]
     DB_PORT = "3306"
-    DB_HOST = aws_db_instance.rds_instance.endpoint
+    DB_HOST = module.db.db_instance_endpoint
   })
 }

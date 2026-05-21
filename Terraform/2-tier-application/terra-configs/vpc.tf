@@ -23,7 +23,7 @@ module "lb_security_group" {
   name = "${var.project_name}-lb-sg"
   vpc_id = module.vpc.vpc_id
 
-  ingress_cidr_blocks = [
+  ingress_with_cidr_blocks  = [
     {
       from_port = 80
       to_port = 80
@@ -38,7 +38,7 @@ module "lb_security_group" {
     }
   ]
 
-  egress_cidr_blocks = [
+  egress_with_cidr_blocks = [
     {
         from_port = 0
         to_port = 0
@@ -60,7 +60,7 @@ module "app_security_group"{
         from_port = 443
         to_port = 443
         protocol = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = "0.0.0.0/0"
     }
   ]
   computed_egress_with_source_security_group_id = [
@@ -69,7 +69,7 @@ module "app_security_group"{
         from_port = 0
         to_port = 0
         protocol = "-1"
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = "0.0.0.0/0"
     }
   ]
 
@@ -89,7 +89,7 @@ module "rds_security_group" {
         from_port = 3306
         to_port = 3306
         protocol = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = "0.0.0.0/0"
     }
   ]
   computed_egress_with_source_security_group_id = [
@@ -98,7 +98,7 @@ module "rds_security_group" {
         from_port = 0
         to_port = 0
         protocol = "-1"
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = "0.0.0.0/0"
     }
   ]
 
