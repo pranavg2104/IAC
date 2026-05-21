@@ -12,6 +12,7 @@ module "alb" {
 
   target_groups = {
     alb_tg = {
+        create_attachment = false
         name_prefix = "tg"
         port = 8000
         protocol = "HTTP"

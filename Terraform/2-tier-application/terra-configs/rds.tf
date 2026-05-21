@@ -8,7 +8,7 @@ module "db"{
   engine_version = "8.0"
   major_engine_version = "8.0"
   family = "mysql8.0"
-  instance_class = "db.t3.micro"
+  instance_class = "t3.micro"
   username = local.db_creds.username
   manage_master_user_password = true
   password_wo = local.db_creds.password
