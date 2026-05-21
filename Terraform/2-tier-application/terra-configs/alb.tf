@@ -12,7 +12,7 @@ module "alb" {
 
   target_groups = {
     alb_tg = {
-        name_prefix = "${var.project_name}-alb-tg"
+        name_prefix = "tg"
         port = 8000
         protocol = "HTTP"
         health_check = {

@@ -9,9 +9,9 @@ module "db"{
   major_engine_version = "8.0"
   family = "mysql8.0"
   instance_class = "db.t3.micro"
-  username = jsondecode(data.aws_secretsmanager_secret_version.rds_credentials.secret_string)["username"]
+  username = local.db_creds.username
   manage_master_user_password = true
-  password_wo = jsondecode(data.aws_secretsmanager_secret_version.rds_credentials.secret_string)["password"]
+  password_wo = local.db_creds.password
   vpc_security_group_ids = [module.rds_security_group.security_group_id]
   multi_az = true
   skip_final_snapshot = true
